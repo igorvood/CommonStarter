@@ -2,13 +2,12 @@ package ru.vood.commonstarter.environmentPostProcessors
 
 import org.apache.commons.logging.LogFactory
 import org.springframework.boot.SpringApplication
-import org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter
 import org.springframework.boot.env.EnvironmentPostProcessor
 import org.springframework.core.env.ConfigurableEnvironment
 
 class DeveloperProfilerResolverEnvironmentPostProcessor : EnvironmentPostProcessor {
 
-    private val log = LogFactory.getLog(LoggingFailureAnalysisReporter::class.java)
+    private val log = LogFactory.getLog(DeveloperProfilerResolverEnvironmentPostProcessor::class.java)
 
     override fun postProcessEnvironment(environment: ConfigurableEnvironment?, application: SpringApplication?) {
         if (environment != null && environment.activeProfiles.isEmpty()) {
