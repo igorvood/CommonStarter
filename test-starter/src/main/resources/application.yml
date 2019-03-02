@@ -8,6 +8,10 @@ ru:
   vood:
     database:
       initialise: true
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      password: vood
+      username: vood
+      url: jdbc:oracle:thin:@localhost:1521:vood
 
 
 
