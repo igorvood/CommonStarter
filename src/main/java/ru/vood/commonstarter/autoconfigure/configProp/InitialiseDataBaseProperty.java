@@ -7,6 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("ru.vood.database")
 public class InitialiseDataBaseProperty {
 
-    boolean initialise;
+    private boolean initialise;
+
+    private String checkLog;
 
 }
