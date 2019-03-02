@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="sqlBatchDelimiter" value="\n/"/>
+    <property name="dir-001.00" value="../../sql/001.00"/>
+    <!--<include file="/db/changelog/changes/create-person-table-changelog-1.xml"/>-->
+    <!--<include file="/db/changelog/changes/insert-person-table-changelog-2.xml"/>-->
+    <!--<include file="/db/changelog/changes/update-person-table-precondition-3.xml"/>-->
+    <changeSet id="1" author="vood">
+        <sqlFile path="${dir-001.00}/ TASK-001/01.table.sql" dbms="oracle" endDelimiter="${sqlBatchDelimiter}"
+                 relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+</databaseChangeLog>
+
