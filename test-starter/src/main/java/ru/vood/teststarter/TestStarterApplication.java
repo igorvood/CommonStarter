@@ -1,5 +1,6 @@
 package ru.vood.teststarter;
 
+import oracle.jdbc.driver.OracleDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

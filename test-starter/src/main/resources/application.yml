@@ -1,17 +1,17 @@
 spring:
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    password: vood
-    username: vood
-    url: jdbc:oracle:thin:@localhost:1521:vood
+    username: jp
+    password: 1
+    url: jdbc:oracle:thin:@//localhost:1521/jp
 ru:
   vood:
     database:
-      initialise: true
-      driver-class-name: oracle.jdbc.driver.OracleDriver
-      password: vood
-      username: vood
-      url: jdbc:oracle:thin:@localhost:1521:vood
+#      initialise: true
+#      driver-class-name: oracle.jdbc.driver.OracleDriver
+#      password: vood
+#      username: vood
+#      url: jdbc:oracle:thin:@localhost:1521:vood
 
 
 

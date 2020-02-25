@@ -1,7 +1,8 @@
 org.springframework.boot.env.EnvironmentPostProcessor=\
 ru.vood.commonstarter.environmentPostProcessors.DeveloperProfilerResolverEnvironmentPostProcessor
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  ru.vood.commonstarter.autoconfigure.OracleDataBaseInitialiseConfiguration
+  ru.vood.commonstarter.autoconfigure.OracleDataBaseInitialiseConfiguration,\
+  ru.vood.commonstarter.DataBaseStructInitializeConfiguration
 # org.springframework.context.ApplicationContextInitializer=\
 # ru.vood.infrastructure.contextInitializer.ProfileSentinelApplicationInitializer,\
 # ru.vood.infrastructure.contextInitializer.TuneApplicationContextInitializer
